@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>星号金字塔</title>
+</head>
+<body>
+	<script>
+	// 星号金字塔
+	//     *        1    4    1
+	//    ***       2    3    3
+	//   *****      3    2    5
+	//  *******     4    1    7
+	// *********    5    0    9 
+	// *********    1    0    9      
+	//  *******     2    1    7    
+	//   *****      3    2    5    
+	//    ***       4    3    3     
+	//     *        5    4    1 
+	
+
+	var row = 5;
+	for(var i=1;i<=row;i++){
+	    for(var j=1;j<=row-i;j++){
+	        document.write("_");
+	    }
+	    for(var j=1;j<=2*i-1;j++){
+	        document.write('*');
+	    }
+
+	 document.write('<br/>');
+	}
+
+	var row = 5;
+	for(var i=1;i<=row;i++){
+	    
+	    for(var j=1;j<=i-1;j++){
+	        document.write("_");
+	    }
+	    for(var j=1;j<=(2*row-1)-2*(i-1);j++){
+	        document.write('*');
+	    }
+
+	 document.write('<br/>');
+	}
+
+    // 倒三角练习
+		dsj(10);
+		function dsj(row){
+		for(var i=1;i<=row;i++){
+		    for(var j=1;j<=row-i;j++){
+		        document.write("_");
+		    }
+		    for(var j=1;j<=2*i-1;j++){
+		        document.write('*');
+		    }
+
+		 document.write('<br/>');
+		}
+		for(var i=1;i<=row;i++){
+		    
+		    for(var j=1;j<=i-1;j++){
+		        document.write("_");
+		    }
+		    for(var j=1;j<=(2*row-1)-2*(i-1);j++){
+		        document.write('*');
+		    }
+
+		 document.write('<br/>');
+		}
+		}
+
+	</script>
+</body>
+</html>
